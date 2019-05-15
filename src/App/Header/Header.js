@@ -4,15 +4,15 @@ import './header.css';
 import './cart.css';
 import './menu.css';
 
+import Logo from './Logo/Logo';
+
 const Header = () => {
   return (
     <header className="header">
       <div className="container">
         <div className="row">
           <div className="col-lg-3">
-            <div className="logo">
-              <img src="img/logo.png" alt="" />
-            </div>
+            <Logo />
           </div>
           <div className="col-lg-6">
             <div className="menu">
