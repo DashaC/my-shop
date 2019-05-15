@@ -5,23 +5,26 @@ const products = [
 		type: 'phone',
 		capacity: 64,
 		price: 500,
-		id: 1
+		id: 1,
+		image: 'images/products/iPhone.png'
 	},
 	{
-		name: 'iPhone 8',
-		description: 'This is iPhone 8',
-		type: 'phone',
+		name: 'iPad',
+		description: 'This is iPad',
+		type: 'iPad',
 		capacity: 128,
 		price: 700,
-		id: 2
+		id: 2,
+		image: 'images/products/iPad.png'
 	},
 	{
-		name: 'iPhone X',
-		description: 'This is iPhone X',
-		type: 'phone',
-		capacity: 256,
-		price: 900,
-		id: 3
+		name: 'Apple Watch',
+		description: 'This is Apple Watch',
+		type: 'watch',
+		capacity: 16,
+		price: 600,
+		id: 3,
+		image: 'images/products/iWatch.png'
 	},
 	{
 		name: 'iPhone XS',
@@ -29,7 +32,8 @@ const products = [
 		type: 'phone',
 		capacity: 256,
 		price: 1000,
-		id: 4
+		id: 4,
+		image: 'images/products/iPhone.png'
 	}
 ];
 
