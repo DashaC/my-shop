@@ -1,27 +1,30 @@
 import React from 'react';
 
-import './productsList.css';
+import './ProductsList.css';
 
 import ProductListItem from './ProductListItem';
-import products from './products';
+import products from './products'
+
 
 const ProductsList = () => {
 	return (
 		<div>
 			<h1 className='title-page'>Products List</h1>
-			<div className="row">
+			<div className='row'>
+
 				{
 					products.map(({
-						id,
 						name,
-						type,
+						id,
 						description,
+						type,
 						capacity,
 						price,
 						image
 					}) => {
+						
 						return (
-							<div className="col-lg-6" key={id}>
+							<div className='col-lg-6' key={id}>
 								<ProductListItem 
 									name={name}
 									description={description}
@@ -29,15 +32,15 @@ const ProductsList = () => {
 									capacity={capacity}
 									price={price}
 									image={image}
-								/>
+									id={id}
+								/> 
 							</div>
 						)
 					})
 				}
 			</div>
-
 		</div>
 	)
-}
+};
 
 export default ProductsList;

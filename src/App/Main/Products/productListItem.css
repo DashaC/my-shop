@@ -6,6 +6,7 @@
     background: rgba(51,102,204,0.75);
     font-size: 21px;
     letter-spacing: 0.5px;
+    
 }
 .product-title {
     font-size: 26px;
@@ -18,6 +19,10 @@
 }
 .product-features {
     font-weight: bold;
+    margin-bottom: 15px;
+
+}
+.product-type,.product-screen-size,.product-capacity {
     margin-bottom: 15px;
 }
 .btn-add-to-cart {
@@ -41,9 +46,38 @@
     text-align: center;
     margin: 10px 0;
 }
-.product-image {
-    background: white;
+.product-img {
     text-align: center;
+    background: #fff;
     padding: 15px 0;
     margin-bottom: 15px;
+}
+.quantity-input {
+    text-align: center;
+}
+.quantity-input button {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #808080;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.quantity-input button:hover {
+    background-color: black;
+}
+.quantity-input input {
+    height: 30px;
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;   
+}
+.like-button {
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
 }

@@ -1,40 +1,49 @@
 const products = [
 	{
+		id: 1,
 		name: 'iPhone 7',
 		description: 'This is iPhone 7',
 		type: 'phone',
-		capacity: 64,
+		capacity: 256,
 		price: 500,
-		id: 1,
-		image: 'images/products/iPhone.png'
+		image: '/images/products/iphone.png'
 	},
 	{
-		name: 'iPad',
-		description: 'This is iPad',
-		type: 'iPad',
+		id: 2,
+		name: 'iPhone 8',
+		description: 'This is iPhone 8',
+		type: 'phone',
 		capacity: 128,
 		price: 700,
-		id: 2,
-		image: 'images/products/iPad.png'
+		image: '/images/products/ipad.png'
 	},
 	{
-		name: 'Apple Watch',
-		description: 'This is Apple Watch',
-		type: 'watch',
-		capacity: 16,
-		price: 600,
 		id: 3,
-		image: 'images/products/iWatch.png'
-	},
-	{
-		name: 'iPhone XS',
-		description: 'This is iPhone XS',
+		name: 'iPhone X',
+		description: 'This is iPhone X',
 		type: 'phone',
 		capacity: 256,
 		price: 1000,
+		image: '/images/products/iphone.png'
+	},
+	{
 		id: 4,
-		image: 'images/products/iPhone.png'
+		name: 'iPhone 8 Plus',
+		description: 'This is iPhone 8 Plus',
+		type: 'phone',
+		capacity: 128,
+		price: 800,
+		image: '/images/products/ipad.png'
 	}
 ];
+
+export const getProductsMap = ((array) => {
+	return (
+		array.reduce((accObjects,product) => ({
+		...accObjects,
+		[product.id]: product
+		}),{})
+	)
+});
 
 export default products;
